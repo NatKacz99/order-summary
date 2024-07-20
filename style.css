@@ -1,0 +1,132 @@
+body {
+  font-size: 16px;
+  font-family: "Red Hat Display", sans-serif;
+  background: url("images/pattern-background-desktop.svg") no-repeat 0px 0px;
+  background-color: hsl(225, 100%, 94%);
+  background-size: contain;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1440px;
+  width: 100%;
+}
+
+.container .title {
+  font-size: 2rem;
+  font-weight: 900;
+  text-align: center
+}
+
+.main{
+  text-align: center;
+  background-color: white;
+  border-radius: 20px;
+  height: 90%;
+  margin-top: 20px;
+  align-items: center;
+}
+
+@media (max-width: 375px) {
+  body {
+    background: url("images/pattern-background-mobile.svg") no-repeat 0px 0px;
+    background-size: cover;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  display: flex;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.container input{
+  border-radius: 10px;
+  background-color: hsl(245, 75%, 52%);
+  box-shadow: 0 15px 10px rgb(213, 213, 213);
+  height: 3.5em;
+  border: hsl(245, 68%, 36%);
+  width: 81.5%;
+  color: white;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.container .plan-price{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: hsl(225, 100%, 98%);
+  flex: 1;
+  padding: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 40px;
+  height: 40px;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.main img{
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.plan-details-plus-icon{
+  display: flex;
+  flex: 1;
+}
+
+.plan-price img{
+  margin-right: 20px;
+  height: 50%;
+  margin-top: 13px
+}
+
+.plan-price .plan-kind{
+  font-weight: 700;
+  margin-top: 23px;
+}
+
+.plan-details{
+  line-height: 10px
+}
+
+.description{
+  line-height: 9px;
+  margin-bottom: 30px;
+}
+
+.annulment{
+  font-weight: 700;
+}
+
+.switch{
+  color: hsl(245, 75%, 52%);
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.switch:hover, input:hover, .annulment:hover{
+  cursor: pointer
+}
+
+.switch:hover{
+  color: rgb(193, 131, 193);
+  text-decoration: none;
+}
+
+input:hover{
+  background-color: rgb(193, 131, 193)
+}
